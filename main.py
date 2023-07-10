@@ -1,4 +1,4 @@
-def demander_information(nom, age):
+"""def demander_information(nom, age):
     print("\nvous vous appelez " + nom + " vous avez " + str(age) + "ans")
     print("L'an prochaine vous aurez " + str(age + 1) + "ans\n")
 
@@ -27,7 +27,21 @@ age1 = demander_age(nom1)
 age2 = demander_age(nom2)
 
 demander_information(nom1, age1)
-demander_information(nom2, age2)
+demander_information(nom2, age2)"""
+
+
+def cube(n):
+    return n**3
+
+
+def volume_sphere(r):
+    pi = 3.14
+    return 4/3*pi*cube(r)
+
+
+r = float(input("entrer la valeur du rayon: "))
+print("le volume du sphère vaut :", volume_sphere(r))
+
 
 
 
