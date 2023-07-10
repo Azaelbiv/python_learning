@@ -48,7 +48,7 @@ NOMBRE_PERSONNES = 5
 for i in range(0, NOMBRE_PERSONNES):
     nom = input("Entrer votre nom: ")
     age = demander_age(nom)
-    demander_information(nom, age)"""
+    demander_information(nom, age)
 
 
 def demander_nom():
@@ -98,7 +98,21 @@ NOMBRE_PERSONNE = int(input("Entrer le nombre de personne: "))
 for i in range(0, NOMBRE_PERSONNE):
     nom = demander_nom()
     age = demander_age(nom)
-    afficher_information(nom, age)
+    afficher_information(nom, age)"""
+
+import turtle
+
+t = turtle.Turtle()
+
+t.forward(30)
+t.left(90)
+t.forward(30)
+t.right(90)
+t.forward(30)
+
+
+
+turtle.done()
 
 
 
