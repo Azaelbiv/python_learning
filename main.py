@@ -111,14 +111,21 @@ def carre(taille):
         t.left(90)
 
 
-carre(25)
-carre(50)
-carre(75)
-carre(100)
-carre(125)
-carre(150)
-carre(175)
-carre(200)
+def carres(taille_depat, nb_tour):
+    for i in range(0, nb_tour):
+        taille = (i+1)*taille_depat
+        carre(taille)
+
+
+carres(25, 10)
+#carre(25)
+#carre(50)
+#carre(75)
+#carre(100)
+#carre(125)
+#carre(150)
+#carre(175)
+#carre(200)
 
 
 
