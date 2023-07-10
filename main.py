@@ -17,7 +17,6 @@ def demander_information(nom, age):
         print("vous etes mineur!")
 
 
-
 def demander_nom():
     reponse_nom = ""
     while reponse_nom == "":
@@ -36,14 +35,20 @@ def demander_age(nom_personne):
     return age_int
 
 
-nom1 = demander_nom()
-nom2 = demander_nom()
-age1 = demander_age(nom1)
-age2 = demander_age(nom2)
+#nom1 = demander_nom()
+#nom2 = demander_nom()
+#age1 = demander_age(nom1)
+#age2 = demander_age(nom2)
 
-demander_information(nom1, age1)
-demander_information(nom2, age2)
+#demander_information(nom1, age1)
+#demander_information(nom2, age2)
 
+NOMBRE_PERSONNES = 5
+
+for i in range(0, NOMBRE_PERSONNES):
+    nom = input("Entrer votre nom: ")
+    age = demander_age(nom)
+    demander_information(nom, age)
 
 
 
