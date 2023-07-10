@@ -105,18 +105,20 @@ import turtle
 t = turtle.Turtle()
 
 
-def la_tortue(taille, nb_pas):
-    for i in range(0, nb_pas):
+def carre(taille):
+    for i in range(0, 4):
         t.forward(taille)
         t.left(90)
-        t.forward(taille)
-        t.right(90)
-    t.forward(taille)
 
 
-valeur_taille = int(input("Entrer la valeur de la taille souhaité : "))
-nombre_pas = int(input("Entrer le nombre de pas de deplacement : "))
-la_tortue(valeur_taille, nombre_pas)
+carre(25)
+carre(50)
+carre(75)
+carre(100)
+carre(125)
+carre(150)
+carre(175)
+carre(200)
 
 
 
