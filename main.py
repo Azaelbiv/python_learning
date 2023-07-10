@@ -1,6 +1,21 @@
-"""def demander_information(nom, age):
+def demander_information(nom, age):
+    print()
     print("\nvous vous appelez " + nom + " vous avez " + str(age) + "ans")
     print("L'an prochaine vous aurez " + str(age + 1) + "ans\n")
+
+    if age < 10:
+        print("vous etes enfant!")
+    elif age == 17:
+        print("vous etes presque majeur!")
+    elif age == 18:
+        print("tout juste majeur: felicitations!")
+    elif age > 60:
+        print("vous etes senior!")
+    elif age >= 18:
+        print("vous etes majeur!")
+    else:
+        print("vous etes mineur!")
+
 
 
 def demander_nom():
@@ -27,20 +42,9 @@ age1 = demander_age(nom1)
 age2 = demander_age(nom2)
 
 demander_information(nom1, age1)
-demander_information(nom2, age2)"""
+demander_information(nom2, age2)
 
 
-def cube(n):
-    return n**3
-
-
-def volume_sphere(r):
-    pi = 3.14
-    return 4/3*pi*cube(r)
-
-
-r = float(input("entrer la valeur du rayon: "))
-print("le volume du sphère vaut :", volume_sphere(r))
 
 
 
